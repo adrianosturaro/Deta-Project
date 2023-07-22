@@ -1,4 +1,4 @@
-"""Exemplifica o uso de uma banco de dados Deta https://deta.space/"""
+"""Exemplifica o uso de uma banco de dados Deta https://deta.space/ """
 
 from __future__ import annotations
 import os

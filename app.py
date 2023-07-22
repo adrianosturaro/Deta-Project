@@ -7,7 +7,7 @@ import database as db
 # emojis: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="Sales Dashboard", page_icon=":bar_chart:", layout="wide")
 
-# --- USER AUTHENTICATION ---
+# --- USER AUTHENTICATION  ---
 @st.cache_data
 def recupera_credenciais() -> None:
     """Recupera os dados do banco de dados"""
