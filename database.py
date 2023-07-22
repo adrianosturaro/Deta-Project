@@ -4,11 +4,13 @@ from __future__ import annotations
 import os
 from dotenv import load_dotenv
 from deta import Deta
-from typing import List, Dict, Any
+from typing import List, Dict
+import streamlit as st
 
 # Load de env variables
-load_dotenv(".env")
-DETA_KEY = os.getenv("DETA_KEY")
+#load_dotenv(".env")
+#DETA_KEY = os.getenv("DETA_KEY")
+DETA_KEY = st.secrets["data_key"]
 
 
 class UserNotFound(Exception):
