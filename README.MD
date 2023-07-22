@@ -1,2 +1,2 @@
 https://github.com/mkhorasani/Streamlit-Authenticator
-https://deta.space 
+https://deta.space
