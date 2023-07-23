@@ -8,7 +8,6 @@ import database as db
 st.set_page_config(page_title="Sales Dashboard", page_icon=":bar_chart:", layout="wide")
 
 # --- USER AUTHENTICATION  ---
-@st.cache_data
 def recupera_credenciais() -> None:
     """Recupera os dados do banco de dados"""
 
@@ -25,8 +24,6 @@ def recupera_credenciais() -> None:
         credentials["usernames"].update({un: user_dict})
     return credentials
 
-credentials = recupera_credenciais()
-
 def handle_click_register():
     """Callback funtion para o botão registre-se"""
     st.session_state['togle_login_register'] = "Register"
@@ -35,6 +32,7 @@ def handle_click_jaregistrado():
     """Callback funtion para o botão já registrado"""
     st.session_state['togle_login_register'] = "Login"
 
+credentials = recupera_credenciais()
 
 if 'togle_login_register' not in st.session_state:
     st.session_state['togle_login_register'] = "Login"
